@@ -1,0 +1,19 @@
+data:
+  dataset_path : data\movie.csv
+  max_vocab_size : 20000
+  test_size : 0.15
+  val_size : 0.15
+  min_freq : 2
+  max_len : 500
+
+training:
+  batch_size : 32
+  epochs : 15
+  early_stopping_patience : 3
+
+model:
+  lstm_units : 64
+  embedding_dim : 128
+  dropout_rate : 0.3
+  learning_rate : 0.001
+  model_save_path : Movie Reviews Sentiment Analysis\models\lstm_model.keras
